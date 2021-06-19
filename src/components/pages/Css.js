@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
 import Header from "../Header";
 import Footer from "../Footer";
+import WrapTitle from "../basis/WrapTitle";
 
 function Css() {
   return (
@@ -10,23 +11,7 @@ function Css() {
       {/* <Loader /> */}
       <Header />
       <section id="Css">
-        <div id="section1">
-          <div className="sec1">
-            <div className="title">
-              <h2 className="split">
-                Css animation is
-                <br />
-                good to pack.
-              </h2>
-              <p>
-                CSS 애니메이션은 메모리가 부족한 JAVASCRIPT를 사용하지 않고도
-                특정 HTML 요소에 애니메이션을 적용하는 방법입니다. CSS
-                애니메이션의 키 프레임에는 요소에 적용될 스타일이 포함되어
-                있습니다.
-              </p>
-            </div>
-          </div>
-        </div>
+        <WrapTitle />
         <div id="section2">
           <div className="sec2">
             <div className="box_container left">

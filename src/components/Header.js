@@ -78,26 +78,11 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/javascript" className="page__click">
-                Javascript
-              </Link>
-            </li>
-            <li>
               <Link to="/board" className="page__click3">
                 Board
               </Link>
             </li>
             <li>
-              <span>
-                <Link to="/signin" className="page__click2">
-                  SignIn
-                </Link>
-              </span>
-              <span>
-                <Link to="/login" className="page__click2">
-                  LogIn
-                </Link>
-              </span>
               <span>
                 <Link to="/contact" className="page__click">
                   Contact
