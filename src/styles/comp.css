@@ -1,0 +1,22 @@
+/* 개별페이지 css */
+/* about */
+#dot{
+  position: absolute;
+  right: -200px;
+  display: block;
+  width: 1000px;
+  height: 1px;
+  background: #000;
+ 
+}
+#dot::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

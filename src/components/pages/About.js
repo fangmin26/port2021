@@ -1,31 +1,48 @@
-import React from "react";
+import React, {  useEffect } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-// import Loader from "../Loader";
+import Loader from "../Loader";
+import { start } from "../../function/LoaderFunc";
+import { Welcometomysite } from "../data/DataList";
 
-function About() {
+const About = () => {
+  useEffect(()=>{
+    start()
+  },[]);
+  const welcome = (el) =>{
+    return(
+      <span aria-hidden='true'aria-label>{el}</span>
+    )
+  }
   return (
-    <main id="root" className="lock">
-      {/* <Loader /> */}
+    <main id="root" 
+    className="lock ">
+      <Loader />
       <Header />
-      <section id="About">
-        <section id="section1">
-          <div className="container">
-            <div className="sec1">
-              <h2 className="split">WELCOME TO MY SITE</h2>
-              <span className="dot"></span>
-              <h3>
-                <strong>LET'S MAKE</strong>
-                <em>AWSOMNESS.</em>
+      <section id="About w-full">
+        <section id="section1 w-full overflw-x-hidden">
+          <div className="container max-w-[1400px] margin_auto">
+            <div className="sec1 w-full h-[850px] pt-[250px] relative">
+              <h2 className="split text-[150px] font-rajdhani max-w-[60%] pb-[45px]">
+              {Welcometomysite.map((letter)=>
+                  <>
+                  {welcome(letter)}
+                  </>
+              )}
+              </h2>
+              <span className="dot"id="dot"></span>
+              <h3 className="absolute right-0 block text-[150px] w-[78%] pt-[45px]">
+                <strong className="block w-full font-semibold text-left">LET'S MAKE</strong>
+                <em className="block w-full font-semibold text-right">AWSOMNESS.</em>
               </h3>
               <div className="distort"></div>
             </div>
           </div>
         </section>
-        <section id="section2">
-          <div className="container">
-            <div className="sec2">
-              <ul className="index_tit">
+        <section id="section2 w-full">
+          <div className="container max-w-[1400px] margin_auto">
+            <div className="sec2 pb-[260px]">
+              <ul className="index_tit w-full flex justify-between">
                 <li>00</li>
                 <li>INTRO</li>
                 <li>NAME: MINJI HWANG</li>

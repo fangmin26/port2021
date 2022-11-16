@@ -1,0 +1,2 @@
+export const Welcometomysite= ["W","E","L","C","O","M","E"," ","T","O"," ","M","Y"," ","S","I","T","E"];
+export const LetsMakeawsomness = ["L","E","T","'","S","M","A","K","E","A","W","S","O","M","N","E","S","S"];
